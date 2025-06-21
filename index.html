@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Newsletter Signup</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
@@ -15,17 +15,22 @@
     <section class="signup">
       <h2>Signup for our newsletter</h2>
       <p class="subheading">Get the latest news on how your code is doing right in your inbox</p>
-      <hr />
+
+      <hr class="hr-1"/>
+      <hr/>
 
       <form class="form">
+
         <fieldset>
-          <legend>Contact Information</legend>
+          <fieldset>
+            <legend><h3>Contact Information</h3></legend>
+          </fieldset>
 
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" required />
+          <input type="text" id="fullname" placeholder="Required" required />
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" placeholder="Required" required />
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" />
@@ -47,12 +52,13 @@
 
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" />
+
         </fieldset>
-
         <hr />
-
         <fieldset>
-          <legend>Newsletter</legend>
+          <fieldset>
+            <legend>Newsletter</legend>
+          </fieldset>
 
           <p>Select the newsletters you would like to receive</p>
           <label><input type="checkbox" checked /> HTML News</label>
