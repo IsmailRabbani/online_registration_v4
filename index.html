@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Newsletter Signup</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -16,30 +19,29 @@
       <h2>Signup for our newsletter</h2>
       <p class="subheading">Get the latest news on how your code is doing right in your inbox</p>
 
-      <hr class="hr-1"/>
-      <hr/>
+      <hr class="hr-1">
+      <hr>
 
       <form class="form">
 
         <fieldset>
-          <fieldset>
-            <legend><h3>Contact Information</h3></legend>
-          </fieldset>
+
+          <legend><h3>Contact Information</h3></legend>
 
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" placeholder="Required" required />
+          <input type="text" id="full_name" name="user_name" placeholder="Required" required />
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="Required" required />
+          <input type="email" id="email" name="user_email" placeholder="Required" required />
 
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" />
+          <input type="tel" id="phone" name="user_phone">
 
           <label for="address">Street Address</label>
-          <input type="text" id="address" />
+          <input type="text" id="address" name="user_address">
 
           <label for="city">City</label>
-          <input type="text" id="city" />
+          <input type="text" id="city" name="user_city">
 
           <label for="state">State</label>
           <select id="state">
@@ -47,32 +49,31 @@
             <option value="CA">California</option>
             <option value="NY">New York</option>
             <option value="TX">Texas</option>
-            <!-- Add more options as needed -->
           </select>
 
           <label for="zip">Zip Code</label>
-          <input type="text" id="zip" />
+          <input type="text" id="zip">
+
+          <hr>
 
         </fieldset>
-        <hr />
-        <fieldset>
-          <fieldset>
-            <legend>Newsletter</legend>
-          </fieldset>
 
-          <p>Select the newsletters you would like to receive</p>
-          <label><input type="checkbox" checked /> HTML News</label>
-          <label><input type="checkbox" /> CSS News</label>
-          <label><input type="checkbox" /> JavaScript News</label>
+        <fieldset class="newsletter">
 
-          <p>Newsletter format</p>
-          <label><input type="radio" name="format" checked /> HTML</label>
-          <label><input type="radio" name="format" /> Plain text</label>
+          <legend><h3>Newsletter</h3></legend>
+
+          <label>Select the newsletters you would like to receive</label>
+          <label class="custom-checkbox"><input type="checkbox" id="html" name="interest_html"><span> HTML News</span></label>
+          <label class="custom-checkbox"><input type="checkbox" id="css_news" name="interest_css"><span> CSS News</span></label>
+          <label class="custom-checkbox"><input type="checkbox" id="javascript_news" name="interest_javascript"><span> JavaScript News</span></label>
+
+          <label>Newsletter format</label>
+          <label class="custom-radio"><input type="radio" id="html_format" name="newsletter_format"><span> HTML</span></label>
+          <label class="custom-radio"><input type="radio" id="plain_text_format" name="newsletter_format"><span> Plain text</span></label>
 
           <label for="topics">Other topics you’d like to hear about</label>
           <textarea id="topics" rows="4"></textarea>
-        </fieldset>
-
+          </fieldset>
         <button type="submit" class="submit-btn">Sign Up</button>
       </form>
     </section>
@@ -81,5 +82,6 @@
   <footer>
     <p>Copyright The Code Review</p>
   </footer>
+
 </body>
 </html>
