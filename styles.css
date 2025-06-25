@@ -127,7 +127,7 @@ input[type="radio"] {
 }
 
 input[id="zip"] {
-  width: 45%;
+  width: 50%;
 }
 
 .submit-btn {
@@ -236,6 +236,7 @@ footer {
   .contact_info input#zip {
     margin-left: 0;
     place-self: start;
+    width: 25%;
   }
 
   form {
