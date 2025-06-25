@@ -13,7 +13,7 @@ body {
 header {
   background-color: #2d3945;
   color: #fff;
-  padding: .5em;
+  padding: 0.3em;
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
@@ -22,6 +22,12 @@ header {
 p {
   font-weight: 400;
   color: #888;
+}
+
+a {
+  text-decoration:  none;
+  color: #2d3945;
+  font-weight: 600;
 }
 
 .signup {
@@ -100,6 +106,12 @@ textarea {
   padding: 15px;
 }
 
+select option:hover  {
+  background-color: #2d3945;
+}
+
+
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -152,6 +164,7 @@ input[id="zip"] {
   width: 18px;
   height: 18px;
   margin: 0;
+  padding: 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
@@ -169,7 +182,7 @@ input[id="zip"] {
 .custom-checkbox input:checked::after {
   content: '✔';
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   top: -2px;
   left: 3px;
@@ -212,6 +225,19 @@ footer {
 
 /* Responsive styles */
 @media (min-width: 768px) {
+  .contact_info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+    align-items: center;
+  }
+
+  .contact_info input#zip {
+    margin-left: 0;
+    place-self: start;
+  }
+
   form {
     gap: 1.5rem;
   }

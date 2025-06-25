@@ -24,7 +24,7 @@
 
       <form class="form">
 
-        <fieldset>
+        <fieldset class="contact_info">
 
           <legend><h3>Contact Information</h3></legend>
 
@@ -54,9 +54,11 @@
           <label for="zip">Zip Code</label>
           <input type="text" id="zip">
 
-          <hr>
-
         </fieldset>
+
+        <div>
+          <hr>
+        </div>
 
         <fieldset class="newsletter">
 
@@ -72,7 +74,7 @@
           <label class="custom-radio"><input type="radio" id="plain_text_format" name="newsletter_format"><span> Plain text</span></label>
 
           <label for="topics">Other topics you’d like to hear about</label>
-          <textarea id="topics" rows="4"></textarea>
+          <textarea id="topics" name="user_interests"></textarea>
           </fieldset>
         <button type="submit" class="submit-btn">Sign Up</button>
       </form>
@@ -81,6 +83,7 @@
 
   <footer>
     <p>Copyright The Code Review</p>
+    <p>Made with &#10084;&#65039; by <a href="https://www.linkedin.com/in/ismail-rabbani/" target="_blank">Ismail Rabbani</a></p>
   </footer>
 
 </body>
