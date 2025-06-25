@@ -62,6 +62,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: .2rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 0.5em;
 }
 
 fieldset {
@@ -85,8 +89,7 @@ fieldset {
 input::placeholder {
   text-align: right;
   font-style: italic;
-  font-weight: 400;
-  color: #888;
+  color: #999;
 }
 
 input,
@@ -110,14 +113,12 @@ select option:hover  {
   background-color: #2d3945;
 }
 
-
-
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
   border: 1.5px solid #2d3945;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="checkbox"],
